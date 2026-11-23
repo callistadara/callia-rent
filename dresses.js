@@ -26,7 +26,7 @@ const DRESSES = [
     sizes: "S, M, L",
     price: 350000,
     image: "",
-    color: "#e9e2d6",
+    color: "#FBB2C2",
   },
   {
     name: "Kebaya Kutubaru Sage",
@@ -35,7 +35,7 @@ const DRESSES = [
     sizes: "M, L",
     price: 250000,
     image: "",
-    color: "#a8b89a",
+    color: "#F5869D",
   },
   {
     name: "Kebaya Encim Bordir",
@@ -44,7 +44,7 @@ const DRESSES = [
     sizes: "S, M",
     price: 275000,
     image: "",
-    color: "#d9a5a0",
+    color: "#FBABB3",
   },
   {
     name: "Kebaya Modern Maroon",
@@ -53,7 +53,7 @@ const DRESSES = [
     sizes: "M, L, XL",
     price: 300000,
     image: "",
-    color: "#7a2e3a",
+    color: "#AC3C5C",
   },
   {
     name: "Dusty Pink Evening Gown",
@@ -62,7 +62,7 @@ const DRESSES = [
     sizes: "S, M",
     price: 400000,
     image: "",
-    color: "#d8a7a7",
+    color: "#F598AB",
   },
   {
     name: "Batik Midi Dress",
@@ -71,7 +71,7 @@ const DRESSES = [
     sizes: "S, M, L",
     price: 200000,
     image: "",
-    color: "#8a6a4a",
+    color: "#EC6289",
   },
   {
     name: "Emerald Satin Dress",
@@ -80,7 +80,7 @@ const DRESSES = [
     sizes: "M, L",
     price: 275000,
     image: "",
-    color: "#2f6b57",
+    color: "#E33872",
   },
   {
     name: "Navy Lace Bridesmaid Dress",
@@ -89,6 +89,6 @@ const DRESSES = [
     sizes: "S, M, L, XL",
     price: 225000,
     image: "",
-    color: "#2c3a5c",
+    color: "#AC3C5C",
   },
 ];
