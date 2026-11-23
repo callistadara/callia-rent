@@ -1,6 +1,6 @@
-# Kemayu Rents
+# Callia Rents
 
-Landing page for Kemayu Rents, a kebaya and dress rental business in Indonesia.
+Landing page for Callia Rents, a kebaya and dress rental business in Jakarta, Indonesia.
 
 ## How to view it
 
@@ -10,7 +10,7 @@ Double-click `index.html` to open it in your browser.
 
 Everything you normally change is in **`dresses.js`**:
 
-- `WHATSAPP_NUMBER`: your WhatsApp number (country code first, digits only, e.g. `6281234567890`)
+- `WHATSAPP_NUMBER`: your WhatsApp number (country code first, digits only, e.g. `628120000000`)
 - `DRESSES`: the catalog. Copy a `{ ... }` block to add a dress, delete one to remove it.
 
 ### Adding photos
