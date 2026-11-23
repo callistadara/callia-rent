@@ -31,7 +31,7 @@ function renderDresses(filter) {
     const media = d.image
       ? `<img src="${d.image}" alt="${d.name}" loading="lazy">`
       : placeholderSVG(d.color);
-    const msg = `Halo Kemayu Rents! I'm interested in renting "${d.name}". Is it available for my date?`;
+    const msg = `Halo Callia Rents! I'm interested in renting "${d.name}". Is it available for my date?`;
     return `
       <article class="card">
         <div class="card-media">
