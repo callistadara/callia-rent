@@ -3,30 +3,137 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My First Website</title>
+  <title>Kemayu Rents – Kebaya & Dress Rental in Indonesia</title>
+  <meta name="description" content="Kemayu Rents: rent beautiful Indonesian kebaya and dresses for every occasion. Book easily via WhatsApp.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main>
-    <h1>Hello, world! 👋</h1>
-    <p>This is my first website. I'm learning HTML, CSS, and git.</p>
 
-    <h2>Things I want to learn</h2>
-    <ul>
-      <li>HTML – the structure of a page</li>
-      <li>CSS – how a page looks</li>
-      <li>Git – saving versions of my work</li>
-    </ul>
+  <!-- ===== Header ===== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#top" class="logo">Kemayu <span>Rents</span></a>
+      <nav class="nav">
+        <a href="#collection">Collection</a>
+        <a href="#how">How it works</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="btn btn-small wa-link" href="#" data-msg="Halo Kemayu Rents! I'd like to ask about renting a dress.">Chat us</a>
+    </div>
+  </header>
 
-    <button id="greet">Click me</button>
-    <p id="message"></p>
-  </main>
+  <!-- ===== Hero ===== -->
+  <section class="hero" id="top">
+    <div class="container hero-inner">
+      <p class="eyebrow">Kebaya & Dress Rental · Indonesia</p>
+      <h1>Look graceful at<br><em>every occasion</em></h1>
+      <p class="hero-sub">
+        From akad and wisuda to kondangan and gala nights. Rent a beautiful
+        Indonesian kebaya or dress from our collection, without the price of buying.
+      </p>
+      <div class="hero-actions">
+        <a href="#collection" class="btn">See the collection</a>
+        <a href="#" class="btn btn-outline wa-link" data-msg="Halo Kemayu Rents! I'd like to ask about renting a dress.">Chat on WhatsApp</a>
+      </div>
+    </div>
+  </section>
 
-  <script>
-    // A tiny bit of JavaScript: show a message when the button is clicked
-    document.getElementById("greet").addEventListener("click", function () {
-      document.getElementById("message").textContent = "You clicked the button! 🎉";
-    });
-  </script>
+  <!-- ===== Occasions strip ===== -->
+  <section class="occasions">
+    <div class="container occasions-inner">
+      <span>Akad & Wedding</span>
+      <span>Wisuda</span>
+      <span>Lamaran</span>
+      <span>Kondangan</span>
+      <span>Bridesmaid</span>
+      <span>Prom & Gala</span>
+    </div>
+  </section>
+
+  <!-- ===== Collection ===== -->
+  <section class="section" id="collection">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Our collection</p>
+        <h2>Find your look</h2>
+        <p class="section-sub">Tap “Ask on WhatsApp” on any piece to check availability for your date.</p>
+      </div>
+
+      <div class="filters" role="group" aria-label="Filter collection">
+        <button class="filter active" data-filter="All">All</button>
+        <button class="filter" data-filter="Kebaya">Kebaya</button>
+        <button class="filter" data-filter="Dress">Dresses</button>
+      </div>
+
+      <div class="grid" id="dress-grid">
+        <!-- Dress cards are created automatically from dresses.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== How it works ===== -->
+  <section class="section section-alt" id="how">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Easy renting</p>
+        <h2>How it works</h2>
+      </div>
+      <ol class="steps">
+        <li>
+          <span class="step-num">1</span>
+          <h3>Choose</h3>
+          <p>Browse the collection and pick the kebaya or dress you love.</p>
+        </li>
+        <li>
+          <span class="step-num">2</span>
+          <h3>Chat & book</h3>
+          <p>Message us on WhatsApp with your event date and size. We'll confirm availability.</p>
+        </li>
+        <li>
+          <span class="step-num">3</span>
+          <h3>Wear & shine</h3>
+          <p>Pick it up or have it delivered, then enjoy your special day.</p>
+        </li>
+        <li>
+          <span class="step-num">4</span>
+          <h3>Return</h3>
+          <p>Send it back after your event. No need to wash it, we take care of that.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ===== Contact ===== -->
+  <section class="section contact" id="contact">
+    <div class="container contact-inner">
+      <p class="eyebrow">Get in touch</p>
+      <h2>Ready to find your outfit?</h2>
+      <p class="section-sub">Chat with us on WhatsApp to ask about sizes, availability, and fitting.</p>
+      <a href="#" class="btn btn-whatsapp wa-link" data-msg="Halo Kemayu Rents! I'd like to ask about renting a dress.">
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.4-.3z"/></svg>
+        <span id="wa-display">WhatsApp</span>
+      </a>
+      <p class="location">📍 Based in Indonesia</p>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container">
+      <p class="logo">Kemayu <span>Rents</span></p>
+      <p>© <span id="year"></span> Kemayu Rents. Kebaya & dress rental, Indonesia.</p>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp button -->
+  <a href="#" class="wa-float wa-link" aria-label="Chat on WhatsApp" data-msg="Halo Kemayu Rents! I'd like to ask about renting a dress.">
+    <svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.4-.3z"/></svg>
+  </a>
+
+  <script src="dresses.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
